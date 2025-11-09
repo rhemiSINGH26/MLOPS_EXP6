@@ -44,14 +44,14 @@ jobs:
     
     # Step 7: Save trained model as artifact
     - name: Upload trained model
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: trained-model
         path: models/iris_model.pkl
     
     # Step 8: Save metrics as artifact
     - name: Upload metrics
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: model-metrics
         path: metrics/metrics.json
